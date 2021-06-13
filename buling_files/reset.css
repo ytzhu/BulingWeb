@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/*
+ * css
+ * @authors cjm
+ * @date    2017-01-16 15:53:36
+ * @version 1.5
+*/
+/*-------------------------------------------reset------------------------------------------------*/
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dd,
+dl,
+dt,
+form,
+input,
+button,
+select,
+textarea,
+pre,
+hr,
+blockquote,
+fieldset,
+figure
+{
+    margin:0;
+}
+ol,
+ul,
+th,
+    /*td,*/
+fieldset,
+legend,
+input,
+button,
+select,
+textarea,
+table td
+{
+    padding:0;
+}
+/*Add the correct display in IE 9-.*/
+header,
+nav,
+article,
+section,
+aside,
+footer,
+figcaption,
+figure,
+hgroup
+{
+    display:block;
+}
+audio,
+video,
+canvas,
+progress{
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+}
+/* Add the correct display in iOS 4-7. */
+audio:not([controls]){
+    display: none;
+    height: 0;
+}
+/* Hide the overflow in IE. */
+svg:not(:root){
+    overflow: hidden;
+}
+/*Add the correct background and color in IE 9-.*/
+mark{
+    background-color: #ff0;
+    color: #000;
+}
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress{
+    vertical-align: baseline;
+}
+/*
+  1. Remove the gray background on active links in IE 10.
+  2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+*/
+a{
+    text-decoration:none;
+    background-color:transparent; /* 1 */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-decoration-skip: objects; /* 2 */
+    outline: none;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* Remove the border on images inside links in IE 10-. */
+img{
+    border:0;
+}
+address,
+caption,
+code,
+i,
+th,
+var{
+    font-style:normal;
+    font-weight:bold;
+}
+strong{
+    font-weight:normal;
+}
+em{
+    font-style:normal;
+}
+/* 去除默认的list-style */
+ul,
+ol,
+li{
+    list-style:none;
+}
+caption,
+th{
+    text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-size:100%;
+    font-weight:normal;
+}
+abbr{
+    border:0;
+    font-variant:normal;
+}
+/*
+  1.Add the correct box sizing in Firefox.
+  2.Show the overflow in Edge and IE.
+*/
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+input,
+button,
+textarea,
+select{
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    outline: none;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select{
+    *font-size:100%;
+}
+/* 去除默认的拉伸 */
+textarea{
+    resize:none;
+    overflow: auto;
+}
+/* Show the overflow in Edge. */
+button,
+input{
+    overflow: visible;
+}
+/* Remove the inheritance of text transform in Edge, Firefox, and IE. */
+button,
+select{
+    text-transform: none;
+}
+/* Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+/*
+  1. Add the correct box sizing in IE 10-.
+  2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+/*
+  1.Correct the cursor style of increment and decrement buttons in Chrome.
+  2.Correct the odd appearance in Chrome and Safari.
+  3.Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+*/
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto;} /* 1 */
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;} /* 2 */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; } /* 3 */
+/* 防止 android软键盘把页面挤上去 */
+input[type="submit"],input[type="reset"],input[type="button"],button{
+    -webkit-appearance: none;
+}
+/* 字体标准 */
+body{
+    font:14px/1 "Helvetica Neue","youyuan",Helvetica,tahoma,Arial,"PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    text-align: left;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-align:justify;
+    text-justify:inter-ideograph;
+}
+/*-------------------------------------base.css-------------------------------------------*/
+span {
+    padding: 0;
+}
+
+
+body {
+    /*font-size: 100%;*//*1em 10px*/
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    color: #333;
+}
+
+/*浮动*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/*清除浮动*/
+.clear {
+    zoom: 1;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*隐藏*/
+.none {
+    display: none;
+}
+
+.font-size-0 {
+    font-size: 0;
+}
+
+.line-mg {
+    margin-top: 10px;
+}
+
+.article {
+    line-height: 2;
+    font-size: 16px;
+ /*   color: #a8a8a8;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

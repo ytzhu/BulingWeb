@@ -1,0 +1,38 @@
+.part{width: 100%;padding: 130px 0 110px; margin: auto;background: url(../imgs/bg.png) no-repeat top center fixed;  background-size: cover;  -webkit-background-size: cover;}
+.part .main{height: 550px;width: 1200px;margin: auto}
+.part .rotate{width:550px;height:500px;position:relative;/*margin-top:50px;*/float:left; margin-left: 350px;}
+.part .rotate .php{width:500px;height:500px;animation:rotating1 30s;animation-iteration-count:infinite;animation-timing-function:linear;background:url(../imgs/rotate-bg.png) no-repeat center}
+.part .rotate .php .box{top:170px;left:170px;width:120px;height:120px;position:absolute;background:#fcfeff;border:21px solid #dde9f3;border-radius:50%;animation:rotating-reverse1 30s;animation-iteration-count:infinite;animation-timing-function:linear}
+.part .rotate .php p{font-size:36px;line-height:58px;text-align:center;color:#474852;font-weight:600}
+.part .rotate .php p img{width:90px;margin-top: 35px;}
+.part .rotate .rotate1{top:0;left:0;width:500px;height:500px;position:absolute;border:1px dashed #b4b4b4;border-radius:50%;animation:rotating1 30s;animation-iteration-count:infinite;animation-timing-function:linear}
+.part .rotate .rotate1 .box{width:70px;height:70px;position:absolute;border:7px solid #dde9f3;border-radius:50%;animation:rotating-reverse1 30s;animation-iteration-count:infinite;animation-timing-function:linear;cursor: pointer}
+.part .rotate .rotate1 .box p{/*line-height:70px;*/text-align:center;color:#fff;font-weight:600;margin-top: 15px;}
+.part .rotate .rotate1 .box.b1{top:-38px;left:253px;background:#51bcb4;background:rgba(81,188,180,.8)}
+.part .rotate .rotate1 .box.b2{top:118px;left:-27px;background:#45b7fe;background:rgba(69,183,254,.8)}
+.part .rotate .rotate1 .box.b3{top:303px;right:-24px;background:#db8cdb;background:rgba(219,140,219,.8)}
+.part .rotate .rotate1 .box.b4{top:288px;left:-30px;background:#ffad00;background:rgba(255,173,0,.8)}
+.part .rotate .rotate1 .box.b5{top:388px;left:141px;background:#ff494d;background:rgba(255,73,77,.8)}
+.part .rotate .rotate2{top:75px;left:75px;width:350px;height:350px;position:absolute;border:1px dashed #b4b4b4;border-radius:50%;animation:rotating2 30s;animation-iteration-count:infinite;animation-timing-function:linear}
+.part .rotate .rotate2 .box{width:70px;height:70px;position:absolute;border:7px solid #dde9f3;border-radius:50%;animation:rotating-reverse2 30s;animation-iteration-count:infinite;animation-timing-function:linear;cursor: pointer}
+.part .rotate .rotate2 .box p{/*line-height:70px;*/text-align:center;color:#fff;font-weight:600;margin-top: 15px;}
+.part .rotate .rotate2 .box.b1{top:-16px;left:40px;background:#7a7ee1;background:rgba(122,126,225,.8)}
+.part .rotate .rotate2 .box.b2{top:260px;right:12px;background:#fe7748;background:rgba(254,119,72,.8)}
+.part .rotate .rotate2 .box.b3{top:156px;left:-33px;background:#ff458c;background:rgba(255,69,140,.8)}
+.part .rotate .rotate2 .box.b4{top:46px;right:-18px;background:#6fc675;background:rgba(111,198,117,.8)}
+.part .rotate .info{top:80px;width:200px;display:none\9;opacity:0;position:absolute;transition:opacity 1s}
+.part .rotate .box:hover .info{display:block\9;opacity:1;transition:opacity 1s}
+@keyframes rotating1{0%{transform:rotate(0)}
+    100%{transform:rotate(360deg)}
+}
+@keyframes rotating-reverse1{0%{transform:rotate(0)}
+    100%{transform:rotate(-360deg)}
+}
+@keyframes rotating2{0%{transform:rotate(0)}
+    100%{transform:rotate(-360deg)}
+}
+@keyframes rotating-reverse2{0%{transform:rotate(0)}
+    100%{transform:rotate(360deg)}
+}
+.part p span{display:block;line-height:20px;color:#fff}
+.part p .small{font-size:11px}

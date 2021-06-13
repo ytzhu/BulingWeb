@@ -1,0 +1,77 @@
+.row {
+    /*   margin-right: -15px;
+       margin-left: -15px;*/
+    padding: 50px 0;
+}
+.col-md-3 {
+    width: 22.5%;float: left;text-align: center}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    /* padding-right: 15px;
+     padding-left: 15px;*/
+    margin: 15px;
+}
+
+/*For portfolio Section*/
+.portfolio{
+    background: url(../imgs/bg.png) no-repeat top center fixed;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    width: 100%;
+    overflow: hidden;
+}
+
+.community-edition{
+    background:#fff;
+    padding:40px 15px;
+    border:1px solid #ececec;
+    box-shadow:2px 2px 5px 0 rgba(55,50,40, .20);
+    -webkit-box-shadow:2px 2px 5px 0 rgba(55,50,40, .20);
+    -moz-box-shadow:2px 2px 5px 0 rgba(55,50,40, .20);
+    -o-box-shadow:2px 2px 5px 0 rgba(55,50,40, .20);
+    -ms-box-shadow:2px 2px 5px 0 rgba(55,50,40, .20);
+    transition:.3s ease-in-out;
+    -moz-transition:.3s ease-in-out;
+    -webkit-transition:.3s ease-in-out;
+    cursor: pointer;
+}
+.community-edition:hover{
+    background:#00a6eb;
+    color:#fff;
+}
+.community-edition:hover i {
+    color:#fff;
+}
+.community-edition:hover h4 {
+    color:#fff;
+}
+.community-edition:hover p {
+    color:#fff;
+}
+
+.community-edition i{
+    font-size:60px;
+    color:#26adec;
+    margin-bottom: 20px;
+}
+.community-edition h4{
+    font-size:16px;
+    line-height: 20px;
+    color: #333;
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing:1px;
+    /* margin-top:15px;*/
+}
+.community-edition p{
+    font-size:12px;
+    color:#777777;
+    margin-top: 15px;
+}
+.portfolio-wrapper2{
+    margin-top:25px;
+}

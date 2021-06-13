@@ -1,0 +1,242 @@
+.dn-container {
+    min-width: 1200px;
+    max-width: 1200px;
+    margin: auto;
+}
+.wb-zc-ali-partner-list-slide .module-wrap {
+    padding: 100px 0;
+    background: url(../imgs/bg.png) no-repeat top center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    width: 100%;
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap h3 {
+    font-size: 24px;
+    color: #373d41;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 32px
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .desc {
+    cont-size: 14px;
+    color: #73777a;
+    line-height: 24px;
+    text-align: center
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay {
+    width: 100%;
+    position: relative
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-list {
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-list .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-list .slick-track .slick-slide {
+    float: left;
+    outline: none !important;
+    z-index: 9 !important
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-list .slick-track .slick-current {
+    z-index: 10 !important
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-prev {
+    background: url(https://img.alicdn.com/tfs/TB1y8PMgH_I8KJjy1XaXXbsxpXa-140-140.png) no-repeat 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-size: 50%;
+    outline: none;
+    border: 0;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    margin-top: -65px;
+    opacity: .8
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-prev:hover {
+    opacity: 1
+}
+
+/*@media (max-width: 769px) {
+    .wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-prev {
+        display: none !important
+    }
+}*/
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-next {
+    background: url(https://img.alicdn.com/tfs/TB1_j2DgLDH8KJjy1XcXXcpdXXa-140-140.png) no-repeat 50%;
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-size: 50%;
+    outline: none;
+    border: 0;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    margin-top: -65px;
+    opacity: .8
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-next:hover {
+    opacity: 1
+}
+
+/*
+@media (max-width: 769px) {
+    .wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-next {
+        display: none !important
+    }
+}
+*/
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-dots {
+    text-align: center;
+    margin: 20px 0
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #d7d8d9;
+    margin: 0 5px
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-dots li button {
+    display: none
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .autoplay .slick-dots li.slick-active {
+    background: #00c1de
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box {
+    position: relative;
+    padding: 16px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #d7d8d9;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .15);
+    transition: all .5s ease;
+    cursor: pointer;
+   /* width: 275px;*/
+    margin-left:15px;
+/*    margin-right:10px;*/
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box:hover {
+    border: 1px solid #00c1de;
+    box-shadow: 0 2px 15px 0 rgba(0, 193, 222, .3)
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box:hover .hover-layer {
+    display: block
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .thum {
+    width: 100%;
+    height: 80px
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .thum img {
+    display: block;
+    height: 80px;
+    margin: 0 auto
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box h4 {
+    font-size: 14px;
+    color: #73777a;
+    text-align: center
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+    background-color: #fff;
+    text-align: center
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer .hover-inner {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer .hover-inner .ver-in {
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer .level {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer .level p {
+    padding-left: 25px;
+    line-height: 2;
+    font-size: 12px;
+    color: #373d41;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer .level p img {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 13px
+}
+
+.wb-zc-ali-partner-list-slide .module-wrap .box .hover-layer .level p span {
+    color: #73777a
+}

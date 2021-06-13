@@ -1,0 +1,10 @@
+.fooder{width:100%}
+.midFrame{position:absolute;z-index:1000;width:100%}
+.foot-contact-info li{color:#fff}
+.copyright-info{color:#fff;margin-top:20px}
+.copyright-links>a:hover{text-shadow:0 0 2px #fff}
+.footerGray{width:100%;float:left;text-align:center;background:#2D3A4B}
+.footerGray .info{padding:10px 0}
+#footer{overflow:hidden;text-align:center;position:relative;height:200px;background:#545e6b;margin:0}
+#WebGL-output{position:absolute;width:100%;height:100%;top:0;left:0}
+#WebGL-output{height:360px}
