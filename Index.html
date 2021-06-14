@@ -1,16 +1,14 @@
 ﻿<!DOCTYPE html>
-<!-- saved from url=(0026)http://www.bulingkeji.com/ -->
 <html lang="ZH">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"><!-- 对于IE8以下浏览器处理-->
     <title>布灵网络科技-官网</title>
     <meta name="keywords" content="布灵、布灵网络、上海布灵、网页制作、网页设计、网站开发、网站设计、自动化、办公软件、小程序开发、公众号开发、">
-    <meta name="description"
-          content="官网-网页设计、网站开发、网站设计、自动化、办公软件、小程序开发、公众号开发等">
-
+    <meta name="description" content="官网-网页设计、网站开发、网站设计、自动化、办公软件、小程序开发、公众号开发等">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="./buling_files/reset.css">
     <link rel="stylesheet" href="./buling_files/font-awesome.min.css">
     <link rel="stylesheet" href="./buling_files/index.css">
@@ -20,11 +18,6 @@
     <link rel="stylesheet" href="./buling_files/module4.css">
     <link rel="stylesheet" href="./buling_files/style.css">
     <link rel="stylesheet" href="./buling_files/footer.css">
-
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
-    <![endif]-->
     <script src="./buling_files/jquery.min.js"></script>
     <script type="text/javascript" src="./buling_files/particles.min.js"></script>
     <script>
@@ -134,25 +127,27 @@
                     height: 100%;
                 }
     </style>
-
 </head>
-
 <body>
     <div id="wrap">
         <!-- 头部开始 -->
         <header id="masthead">
             <nav class="container clear">
                 <div class="sl-logo left">
-                    <a href="javascript:;">
+                    <!-- 尝试移动鼠标并单击文本区域 -->
+                    <div id="title-desktop" style=" display: none;">buling</div>
+                    <div id="title-mobile" style=" display: none;">buling</div>
+
+                    <canvas id="spring-text" style=""></canvas>
+                    <!--<a href="javascript:;">
                         <img src="./img/bulinglogo.png" alt="crm"
                              height="52">
-                    </a>
+                    </a>-->
                 </div>
                 <div class="left nav-wrap">
                     <ul id="nav">
                         <li><a class="font-active" href="http://www.bulingkeji.com">首页</a></li>
                         <li class="product">
-                            <!--<a href="http://www.bulingkeji.com">产品服务</a>
                             <ul class="listUl" style="">
                                 <li><a href="javascript:;" class="item">客户管理系统</a></li>
                                 <li><a href="javascript:;" class="item">会员制管理系统</a></li>
@@ -167,17 +162,16 @@
                                 <li><a href="javascript:;" class="item">其他系统定制开发</a></li>
                             </ul>
                         </li>
-                        <li><a href="http://www.bulingkeji.com/about-us.html">关于我们</a></li>-->
+                        <!--<li><a href="http://www.bulingkeji.com/about-us.html">关于我们</a></li>-->
                     </ul>
                     <!-- <span class="nav-active"></span> -->
                 </div>
-                <!-- <a class="right btn" href="http://slycrm.com/" target="_blank">登录</a> -->
                 <ul class="right" id="contact-info">
                     <li>
                         <img class="fa" src="./img/phone_icon.jpg" style="height:17px;width:17px;">&nbsp;&nbsp;17621046588
                     </li>
                     <li>
-                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=168405940&amp;site=qq&amp;menu=yes"
+                        <a target="" href=""
                            title="qq" style="color:#333">
                             <img class="fa" src="./img/qq_icon.png" style="height:18px;width:17px;">&nbsp;&nbsp;710068618
                         </a>
@@ -192,13 +186,12 @@
             <!-- banner开始 -->
             <div class="banner-wrap">
                 <div id="particles-js" style="height:100%;width:100%;">
-                    <canvas class="particles-js-canvas-el"
-                            width="1898" height="911" style="width: 100%; height: 100%;"></canvas>
+                    <canvas class="particles-js-canvas-el" width="1898" height="911" style="width: 100%; height: 100%;"></canvas>
                 </div>
                 <div class="banner-text-wrap">
                     <div class="banner-text-top">布灵网络科技</div>
                     <div class="banner-text-mid"><span>网页设计、软件开发、小程序开发等</span><span>全程服务 </span></div>
-                    <a class="banner-text-bot" href="" target="">立即体验</a>
+                    <!--<a class="banner-text-bot" href="" target="">立即体验</a>-->
                 </div>
             </div>
             <!-- banner结束 -->
@@ -218,96 +211,9 @@
                 </div>
             </div> -->
             <div>
-                <!-- <h1 class="container">产品介绍</h1>
-                <div class="container grad-line"></div> -->
+                <!-- <h1 class="container">产品介绍</h1> -->
+                <div class="container grad-line"></div>
                 <div class="product-introduction">
-
-
-                    <!--<div class="container" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
-                        <h2 class="home-level2">关于CRM系统</h2>
-                        <p class="article" style="margin-bottom:20px">
-                            CRM也就是客户关系管理的缩写。客户关系管理的目的是要尽可能挖掘每一个客户的终身价值，因为统计表明开发新客户的成本是保有老客户的成本的6倍；客户流失率降低5％，其利润就能增加25％～85％；一个满意的客户会带来8笔潜在的生意，一个不满意的客户则可能影响25个人的购买意愿；如果忽略对老客户的关注，大多数企业会在5年内流失一半的客户。
-                        </p>
-                        <h2 class="home-level2">为什么选择我们</h2>
-                        <video src="imgs/329e75c3926c771bd2d63bf56dac2c65.mp4" width="1200" height="" type="video/mp4" controls="controls" loop="loop" autoplay="">
-                        </video>
-                        <embed src="imgs/329e75c3926c771bd2d63bf56dac2c65.mp4" autostart="true" allowFullScreen="true" quality="high" width="1200px" height="1000px" align="middle" type="video/mp4"></embed>
-                    </div>-->
-
-
-                    <!--<div class="container" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
-                        <h2 class="home-level2">CRM能帮你搞定什么？</h2>
-                        <p class="article">
-                            <span style="color: #FF9000">两个概念，一个手段：</span>无论你痛在哪个地方，也无论何种产品、部署方式、出身流派，CRM大体是帮你实现两个目标的。
-                        </p>
-                        <div class="flex-wrap">
-                            <div class="flex-item left">
-                                <ul>
-                                    <li>持币待购，预算划定，可是...</li>
-                                    <li>客户必须管理起来，靠打电话找来的新客户越来 越少... </li>
-                                    <li>两个老销售走了，客户资源和信息也被老对手同 时挖走了... </li>
-                                </ul>
-                            </div>
-                            <div class="flex-item center">
-                                <p class="circle">先把你搞晕</p>
-                            </div>
-                            <div class="flex-item right">
-                                <ul>
-                                    <li>一投广告就有流量，一推就有订单，一停就下来， 可是利润在哪？ </li>
-                                    <li>今年到底做了多少业务？多少订单？ </li>
-                                    <li>明年还有哪些靠谱的机会？ </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>-->
-
-
-                    <!--<div class="container" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
-                        <h2 class="home-level2 margin-bottom-none">销售过程自动化</h2>
-                        <div class="flex-wrap-column">
-                            <i class="point"></i>
-                            <i class="line"></i>
-                            <i class="trangle"></i>
-                            <div class="flex-wrap">
-                                <ul class="flex-itemUl">
-                                    <li>支持销售过程业务流转，实现公司大部分运行体系。 </li>
-                                    <li>管理综合客户信息，提升销售绩效及市场透明度。</li>
-                                    <li>实现活动管理，促进机会升迁及，提升赢率，沉淀销售智能。 </li>
-                                    <li>分侧重点关注客户及业务进展。 </li>
-                                    <li>实现销售团队内部及其与其他职能部门间的沟通，合作，信息分享，工作协同。 </li>
-                                    <li>实现活动管理，客户权益及产品交付管理。 </li>
-                                    <li>公司运营层面把握整体销售运营情况，制定计划，分配任务。</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>-->
-
-
-
-                    <!--<div class="container" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
-                        <h2 class="home-level2 margin-bottom-none">营销过程自动化</h2>
-                        <div class="flex-wrap-column wrap2">
-
-                            <div class="flex-wrap">
-                                <ul class="flex-itemUl">
-                                    <li>支持销售过程业务流转，实现公司大部分运行体系。 <i class="num1"></i><i class="num">1</i></li>
-                                    <li>管理综合客户信息，提升销售绩效及市场透明度。<i class="num1"></i><i class="num">2</i></li>
-                                    <li>实现活动管理，促进机会升迁及，提升赢率，沉淀销售智能。 <i class="num1"></i><i class="num">3</i></li>
-                                    <li>分侧重点关注客户及业务进展。 <i class="num1"></i><i class="num">4</i></li>
-                                    <li>
-                                        实现销售团队内部及其与其他职能部门间的沟通，合作，信息分享，工作协同。 <i class="num1"></i><i class="num">5</i>
-                                    </li>
-                                    <li>
-                                        聚焦营销内容，渠道，交互方式，制定多阶段，多波次，精确地场景化营销方案和管理。 <i class="num1"></i><i class="num">6</i>
-                                    </li>
-                                    <li>公司运营层面把握整体销售运营情况，制定计划，分配任务。<i class="num1"></i><i class="num">7</i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>-->
-
-
-
                     <div class="introduction-wrap">
                     </div>
                     <div class="container" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
@@ -320,98 +226,16 @@
                             </div>
                             <div class="right"><img src="./buling_files/web.png" alt=""></div>
                         </div>
-
                     </div>
-                    <div class="container product-mobile clear"
-                         style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
+                    <div class="container product-mobile clear" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
                         <div class="right">
                             <p class="img-title">移动端软件开发</p>
                             <p class="article">
-                                PC端使用场景，室内、桌椅、长时间；移动端使用场景，任何时间、任何地点。如果只使用几分钟，一般人是不会开电脑的，直接在手机操作就可以了。随着3G、4G资费的下调，人们在等车、坐车、排队时碎片化的使用方式一定会增加。移动端特点为移动便携，结合重力感应、GPS可实现一些特殊功能，以上是PC不具备的。
+                                移动端使用场景，任何时间、任何地点。如果只使用几分钟，一般人是不会开电脑的，直接在手机操作就可以了。随着3G、4G资费的下调，人们在等车、坐车、排队时碎片化的使用方式一定会增加。移动端特点为移动便携，结合重力感应、GPS可实现一些特殊功能，以上是PC不具备的。
                             </p>
                         </div>
                         <div class="left"><img src="./buling_files/app.png" alt=""></div>
                     </div>
-
-                    <!--<section id="business" class="portfolio sections">
-                        <div class="container" style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
-                            <div class="row clear">
-                                <div class="portfolio-wrapper text-center row clear">
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-bar-chart"></i>
-                                            <div class="separator"></div>
-                                            <h4>报表数据随时掌握</h4>
-                                            <p>全面了解数据业务</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-edit"></i>
-                                            <div class="separator"></div>
-                                            <h4>业务审批更及时</h4>
-                                            <p>随时随地快捷审核各项业务</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-user-plus"></i>
-                                            <div class="separator"></div>
-                                            <h4>销售计划</h4>
-                                            <p>快速跟进客户 不丢失任何客户</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-calendar-plus-o"></i>
-                                            <div class="separator"></div>
-                                            <h4>随时随地签到打卡</h4>
-                                            <p>外出签到 轻松打卡</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-file-text"></i>
-                                            <div class="separator"></div>
-                                            <h4>订单进展随时悉知</h4>
-                                            <p>轻松获取各类订单进展情况</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-calendar"></i>
-                                            <div class="separator"></div>
-                                            <h4>日程共享</h4>
-                                            <p>工作安排一目了然</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-vcard"></i>
-                                            <div class="separator"></div>
-                                            <h4>客户状况随时看</h4>
-                                            <p>轻松掌握销售全过程</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-xs-12">
-                                        <div class="community-edition">
-                                            <i class="fa fa-heart"></i>
-                                            <div class="separator"></div>
-                                            <h4>服务提醒</h4>
-                                            <p>帮您轻松实现复购追销转介绍</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </section>-->
                     <!-- 优势开始 -->
                     <div class="layout layout-grid-0">
                         <div class="home-solution J_Module">
@@ -419,7 +243,6 @@
                                 <div class="slide-container y-row" id="slide-container">
                                     <div class="slide-body" id="slide-body">
                                         <ul class="slide-content" id="slide-content">
-
                                             <li class="slide-item" data-code="ecommerce">
                                                 <a href="http://www.bulingkeji.com/" target="_blank"
                                                    style="display:block;">
@@ -444,7 +267,6 @@
                                                     </div>
                                                 </a>
                                             </li>
-
                                             <li class="slide-item" data-code="app">
                                                 <a href="http://www.bulingkeji.com/" target="_blank"
                                                    style="display:block;">
@@ -469,7 +291,6 @@
                                                     </div>
                                                 </a>
                                             </li>
-
                                             <li class="slide-item" data-code="inance">
                                                 <a href="http://www.bulingkeji.com/" target="_blank"
                                                    style="display:block;">
@@ -496,7 +317,6 @@
 
                                         </ul>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -579,57 +399,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 合作伙伴 -->
-                    <div class="container layout layout-grid-0"
-                         style="transition: all 1s ease 0s, opacity 1.5s ease 0s; opacity: 0;">
-                        <div class="grid-0">
-                            <div class="col col-main">
-                                <div class="main-wrap J_Region">
-                                    <div class="wb-zc-ali-partner-list-slide J_Module">
-                                        <div class="module-wrap J_tb_lazyload dbl_tms_module_wrap" id="floor"
-                                             style="background-color: #fff;">
 
-
-                                            <!-- <div class="dn-container">
-                                                <h1>合作伙伴</h1>
-                                                <div class="grad-line"></div>
-                                                <div class="autoplay slick-initialized slick-slider slick-dotted"
-                                                    role="toolbar">
-                                                    <div aria-live="polite" class="slick-list">
-                                                        <div class="slick-track" role="listbox">
-                                                            <div class="item-li dn-col-sm-6 dn-col-xs-24 slick-slide slick-cloned"
-                                                                style="width: 295px;">
-                                                                <div class="box" style="position: relative;">
-                                                                    <div class="thum"
-                                                                        style="position: relative; z-index: 2;">
-                                                                        <img src="./buling_files/parter1.png">
-                                                                    </div>
-                                                                    <canvas width="246.0039716796875"
-                                                                        height="79.98399029541017"
-                                                                        style="position:absolute; top:0; left:0; z-index:1;width:100%;height: 100%"></canvas>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- 主体结束 -->
-                        </div>
-                        <!-- 首页结束 -->
-                        <!-- 返回顶部 -->
-                        <div id="to-top" class="to-top none"
-                             onclick="$('body,html').animate({scrollTop:0},300);" style="display: none;">
-                            <a href="http://www.bulingkeji.com/###"><img src="./buling_files/to-top.png" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- 脚步开始 -->
+                    <!-- foot -->
                     <div class="fooder" id="footer">
                         <div id="WebGL-output">
                             <canvas width="1458" height="359"
@@ -655,14 +426,17 @@
 
                                 <div class="copyright-info">
                                     <p>
-                                        Copyright ©&nbsp; 上海布灵网络科技中心<span class="copyright-split">
+                                        Copyright ©&nbsp; 上海布灵网络科技中心
+                                        <span class="copyright-split">
                                             |<a target="_blank"
                                                 href="http://beian.miit.gov.cn/"
                                                 style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff">
                                             </a>
-                                        </span><a target="_blank" href="http://beian.miit.gov.cn/"
-                                                  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff">沪ICP备2021007120号-1</a>
-
+                                        </span>
+                                        <a target="_blank" href="http://beian.miit.gov.cn/"
+                                           style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff">
+                                            沪ICP备2021007120号-1
+                                        </a>
                                         <span style="width:300px;margin:0 auto; padding:20px 0;color:#ffffff">
                                             <a target="_blank"
                                                href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202010947"
@@ -680,116 +454,322 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <div class="footerGray">
-                <div class="info "></div>
-            </div>
-            <!-- 脚步结束 -->
-            <script src="./buling_files/xs.js" type="text/javascript" charset="utf-8"></script>
-            <script type="text/javascript" src="./buling_files/jquery.smoove.js"></script>
-            <script type="text/javascript" src="./buling_files/scrollForever.js"></script>
+        </div>
+    </div>
+    <div class="footerGray">
+        <div class="info "></div>
+    </div>
+    <!-- footend -->
+    <script src="./buling_files/xs.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="./buling_files/jquery.smoove.js"></script>
+    <script type="text/javascript" src="./buling_files/scrollForever.js"></script>
+    <script>
+        $(function () {
+            var speed = 30;
+            containerIn.innerHTML = containerIn.innerHTML + containerIn.innerHTML;
+            function Marquee() {
+                if (containerIn.offsetWidth / 2 - containerOut.scrollLeft <= 0) {
+                    containerOut.scrollLeft -= containerIn.offsetWidth / 2;
+                } else {
+                    containerOut.scrollLeft++;
+                }
+            }
+            var MyMar = setInterval(Marquee, speed);
+            containerOut.onmouseover = function () { clearInterval(MyMar) };
+            containerOut.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+            $(".product").hover(function () {
+                $(this).find(".listUl").fadeIn(200)
+            }, function () {
+                $(this).find(".listUl").fadeOut(200)
+            })
+            $("#contentImg").scrollForever();
+            // var time1 = new Date;
+            var li = $("#marquee_1").find("li");
+            var w = li.size() * li.outerWidth();
+            console.log(w);
+            $(".ab").css("width", w * 2);
+            var _html = $("#marquee_1").html();
+            $("#marquee_2").html(_html);
+            function autoScroll() {
+                var s = $(".a").scrollLeft();
+                if (s >= w) {
+                    $(".a").scrollLeft(0);
+                } else {
+                    $(".a").scrollLeft(s + 1);
+                }
+            }
+            var _scrolling = setInterval(autoScroll, 20);
+            $(".a").hover(function () {
+                clearInterval(_scrolling);
+            }, function () {
+                _scrolling = setInterval(autoScroll, 20);
+            })
+            // console.log("耗时：" + (new Date - time1) + " 毫秒");
+        })
+    </script>
+    <script>
+        $('.mainbody .container').smoove({ offset: '15%' });
+        $('.divright').smoove({ offset: '15%' });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".item-li .box").xs999(6);
+        })
+    </script>
+    <script>
+        $(function () {
+            //导航栏状态切换
+            $("#nav>li>a").click(function () {
+                $(this).addClass("font-active").parent().siblings().children().removeClass("font-active");
+                var _w = $(this).innerWidth();
+                var off = $(this).position();
+                var _left = off.left;
+                $(".nav-wrap .nav-active").animate({ left: _left, width: _w }, 300);
+            })
+            // 导航栏滚动，去掉透明度
+            $(document).scroll(function () {
+                var top = $(document).scrollTop();
+                if (top > 700) {
+                    // $("#masthead").css("background","#3c3c3c");
+                    $("#to-top").fadeIn();
+                } else {
+                    // $("#masthead").css("background","rgba(0,0,0,0.5)");
+                    $("#to-top").fadeOut();
+                }
+            });
+            // 返回顶部按钮的替换
+            $("#to-top").hover(function () {
+                $("#to-top a img").attr("src", "imgs/to-top-hover.png");
+            }, function () {
+                $("#to-top a img").attr("src", "imgs/to-top.png");
+            }
+            )
+        })
+    </script>
+    <script>
+        // WRITTEN BY TRUMAN HEBERLE
+        var COLOR = "#0099FF"
+        var MESSAGE = document.getElementById("title-desktop").textContent;
+        var FONT_SIZE = 70;//字体大小
+        var AMOUNT = 1500;//粒子数量
+        var SIZE = 2;//粒子大小
+        var INITIAL_DISPLACEMENT = 50;//初始位移
+        var INITIAL_VELOCITY = 3;//初速度
+        var VELOCITY_RETENTION = 0.95;//速度保持力
+        var SETTLE_SPEED = 1;//定速
+        var FLEE_SPEED = 1;//快速逃离
+        var FLEE_DISTANCE = 50;//逃离距离
+        var FLEE = true;
+        var SCATTER_VELOCITY = 2;//散射速度
+        var SCATTER = true;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // Mobile
+            MESSAGE = document.getElementById("title-mobile").textContent;
+            FONT_SIZE = 30;
+            AMOUNT = 200;
+            SIZE = 2;
+            INITIAL_DISPLACEMENT = 50;
+            SETTLE_SPEED = 1;
+            FLEE = false;
+            SCATTER_VELOCITY = 2;
+        }
+        const canvas = document.getElementById("spring-text");
+        const ctx = canvas.getContext("2d");
 
-            <script>
-                $(function () {
+        var POINTS = [];
+        var MOUSE = {
+            x: 0,
+            y: 0
+        }
+        function Point(x, y, r, g, b, a) {
+            var angle = Math.random() * 6.28;
+            this.dest_x = x;
+            this.dest_y = y;
+            this.original_r = r;
+            this.original_g = g;
+            this.original_a = a;
+            this.x = canvas.width / 2 - x + (Math.random() - 0.5) * INITIAL_DISPLACEMENT;
+            this.y = canvas.height / 2 - y + (Math.random() - 0.5) * INITIAL_DISPLACEMENT;
+            this.velx = INITIAL_VELOCITY * Math.cos(angle);
+            this.vely = INITIAL_VELOCITY * Math.sin(angle);
+            this.target_x = canvas.width / 2 - x;
+            this.target_y = canvas.height / 2 - y;
+            this.r = r;
+            this.g = g;
+            this.b = b;
+            this.a = a;
 
-                    var speed = 30;
-                    containerIn.innerHTML = containerIn.innerHTML + containerIn.innerHTML;
-                    function Marquee() {
-                        if (containerIn.offsetWidth / 2 - containerOut.scrollLeft <= 0) {
-                            containerOut.scrollLeft -= containerIn.offsetWidth / 2;
-                        } else {
-                            containerOut.scrollLeft++;
-                        }
+            this.getX = function () {
+                return this.x;
+            }
+
+            this.getY = function () {
+                return this.y;
+            }
+
+            this.resetTarget = function () {
+                this.target_x = canvas.width / 2 - this.dest_x;
+                this.target_y = canvas.height / 2 - this.dest_y;
+            }
+
+            this.fleeFrom = function (x, y) {
+                this.velx -= ((MOUSE.x - this.x) * FLEE_SPEED / 10);
+                this.vely -= ((MOUSE.y - this.y) * FLEE_SPEED / 10);
+            }
+
+            this.settleTo = function (x, y) {
+                this.velx += ((this.target_x - this.x) * SETTLE_SPEED / 100);
+                this.vely += ((this.target_y - this.y) * SETTLE_SPEED / 100);
+                this.velx -= this.velx * (1 - VELOCITY_RETENTION);
+                this.vely -= this.vely * (1 - VELOCITY_RETENTION);
+            }
+
+            this.scatter = function () {
+                var unit = this.unitVecToMouse();
+                var vel = SCATTER_VELOCITY * 10 * (0.5 + Math.random() / 2);
+                this.velx = -unit.x * vel;
+                this.vely = -unit.y * vel;
+            }
+            this.move = function () {
+                if (this.distanceToMouse() <= FLEE_DISTANCE) {
+                    this.fleeFrom(MOUSE.x, MOUSE.y);
+                }
+                else {
+                    this.settleTo(this.target_x, this.target_y);
+                }
+
+                if (this.x + this.velx < 0 || this.x + this.velx >= canvas.width) {
+                    this.velx *= -1;
+                }
+                if (this.y + this.vely < 0 || this.y + this.vely >= canvas.height) {
+                    this.vely *= -1;
+                }
+
+                this.x += this.velx;
+                this.y += this.vely;
+            }
+            this.distanceToTarget = function () {
+                return this.distanceTo(this.target_x, this.target_y);
+            }
+            this.distanceToMouse = function () {
+                return this.distanceTo(MOUSE.x, MOUSE.y);
+            }
+            this.distanceTo = function (x, y) {
+                return Math.sqrt((x - this.x) * (x - this.x) + (y - this.y) * (y - this.y));
+            }
+            this.unitVecToTarget = function () {
+                return this.unitVecTo(this.target_x, this.target_y);
+            }
+            this.unitVecToMouse = function () {
+                return this.unitVecTo(MOUSE.x, MOUSE.y);
+            }
+            this.unitVecTo = function (x, y) {
+                var dx = x - this.x;
+                var dy = y - this.y;
+                return {
+                    x: dx / Math.sqrt(dx * dx + dy * dy),
+                    y: dy / Math.sqrt(dx * dx + dy * dy)
+                };
+            }
+        }
+        window.addEventListener("resize", function () {
+            resizeCanvas()
+            adjustText()
+        });
+        if (FLEE) {
+            window.addEventListener("mousemove", function (event) {
+                MOUSE.x = event.clientX;
+                MOUSE.y = event.clientY;
+            });
+        }
+        if (SCATTER) {
+            window.addEventListener("click", function (event) {
+                MOUSE.x = event.clientX;
+                MOUSE.y = event.clientY;
+                for (var i = 0; i < POINTS.length; i++) {
+                    POINTS[i].scatter();
+                }
+            });
+        }
+        function resizeCanvas() {
+            //canvas.width = window.innerWidth;
+            //canvas.height = window.innerHeight;
+            canvas.width = 200;//画布大小
+            canvas.height = 70;
+        }
+        function adjustText() {
+            ctx.fillStyle = COLOR;
+            ctx.textBaseline = "middle";
+            ctx.textAlign = "center";
+            ctx.font = FONT_SIZE + "px Arial";
+            ctx.fillText(MESSAGE, canvas.width / 2, canvas.height / 2);
+            var textWidth = ctx.measureText(MESSAGE).width;
+            if (textWidth == 0) {
+                return;
+            }
+            var minX = canvas.width / 2 - textWidth / 2;
+            var minY = canvas.height / 2 - FONT_SIZE / 2;
+            var data = ctx.getImageData(minX, minY, textWidth, FONT_SIZE).data;
+            var isBlank = true;
+            for (var i = 0; i < data.length; i++) {
+                if (data[i] != 0) {
+                    isBlank = false;
+                    break;
+                }
+            }
+            if (!isBlank) {
+                var count = 0;
+                var curr = 0;
+                var num = 0;
+                var x = 0;
+                var y = 0;
+                var w = Math.floor(textWidth);
+                POINTS = [];
+                while (count < AMOUNT) {
+                    while (curr == 0) {
+                        num = Math.floor(Math.random() * data.length);
+                        curr = data[num];
                     }
-                    var MyMar = setInterval(Marquee, speed);
-                    containerOut.onmouseover = function () { clearInterval(MyMar) };
-                    containerOut.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+                    num = Math.floor(num / 4);
+                    x = w / 2 - num % w;
+                    y = FONT_SIZE / 2 - Math.floor(num / w);
+                    POINTS.push(new Point(x, y, data[num * 4], data[num * 4 + 1], data[num * 4 + 2], data[num * 4 + 3]));
+                    curr = 0;
+                    count++;
+                }
+            }
+        }
+        function init() {
+            resizeCanvas()
+            adjustText()
+            window.requestAnimationFrame(animate);
+        }
+        function animate() {
+            update();
+            draw();
+        }
+        function update() {
+            var point;
+            for (var i = 0; i < POINTS.length; i++) {
+                point = POINTS[i];
+                point.move();
+            }
+        }
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            var point;
+            for (var i = 0; i < POINTS.length; i++) {
+                point = POINTS[i];
+                ctx.fillStyle = "rgba(" + point.r + "," + point.g + "," + point.b + "," + point.a + ")";
+                ctx.beginPath();
+                ctx.arc(point.getX(), point.getY(), SIZE, 0, 2 * Math.PI);
+                ctx.fill();
+            }
 
-
-                    $(".product").hover(function () {
-                        $(this).find(".listUl").fadeIn(200)
-                    }, function () {
-                        $(this).find(".listUl").fadeOut(200)
-                    })
-                    $("#contentImg").scrollForever();
-                    // var time1 = new Date;
-                    var li = $("#marquee_1").find("li");
-                    var w = li.size() * li.outerWidth();
-                    console.log(w);
-                    $(".ab").css("width", w * 2);
-                    var _html = $("#marquee_1").html();
-                    $("#marquee_2").html(_html);
-                    function autoScroll() {
-                        var s = $(".a").scrollLeft();
-                        if (s >= w) {
-                            $(".a").scrollLeft(0);
-                        } else {
-                            $(".a").scrollLeft(s + 1);
-                        }
-                    }
-                    var _scrolling = setInterval(autoScroll, 20);
-                    $(".a").hover(function () {
-                        clearInterval(_scrolling);
-                    }, function () {
-                        _scrolling = setInterval(autoScroll, 20);
-                    })
-                    // console.log("耗时：" + (new Date - time1) + " 毫秒");
-                })
-            </script>
-            <script type="text/javascript" src="http://tajs.qq.com/stats?sId=15910806" charset="UTF-8"></script>
-
-            <script>
-                $('.mainbody .container').smoove({ offset: '15%' });
-
-                $('.divright').smoove({ offset: '15%' });
-                /*$('container .block').smoove({offset:'15%'});*/
-
-            </script>
-            <script>
-                $(document).ready(function () {
-                    $(".item-li .box").xs999(6);
-                })
-            </script>
-            <script>
-                $(function () {
-
-                    //导航栏状态切换
-                    $("#nav>li>a").click(function () {
-                        $(this).addClass("font-active").parent().siblings().children().removeClass("font-active");
-                        var _w = $(this).innerWidth();
-                        var off = $(this).position();
-                        var _left = off.left;
-                        $(".nav-wrap .nav-active").animate({ left: _left, width: _w }, 300);
-                    })
-
-
-                    // 导航栏滚动，去掉透明度
-                    $(document).scroll(function () {
-                        var top = $(document).scrollTop();
-                        if (top > 700) {
-                            // $("#masthead").css("background","#3c3c3c");
-                            $("#to-top").fadeIn();
-                        } else {
-                            // $("#masthead").css("background","rgba(0,0,0,0.5)");
-                            $("#to-top").fadeOut();
-                        }
-
-                    });
-
-                    // 返回顶部按钮的替换
-                    $("#to-top").hover(function () {
-                        $("#to-top a img").attr("src", "imgs/to-top-hover.png");
-                    }, function () {
-                        $("#to-top a img").attr("src", "imgs/to-top.png");
-                    }
-                    )
-
-                })
-
-            </script>
-
+            window.requestAnimationFrame(animate);
+        }
+        init();
+    </script>
 </body>
-
 </html>
