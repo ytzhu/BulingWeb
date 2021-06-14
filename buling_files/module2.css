@@ -1,7 +1,7 @@
-.part{width: 100%;padding: 130px 0 110px; margin: auto;background: url(../imgs/bg.png) no-repeat top center fixed;  background-size: cover;  -webkit-background-size: cover;}
+.part{width: 100%;padding: 130px 0 110px; margin: auto;background: url(../img/bg.png) no-repeat top center fixed;  background-size: cover;  -webkit-background-size: cover;}
 .part .main{height: 550px;width: 1200px;margin: auto}
 .part .rotate{width:550px;height:500px;position:relative;/*margin-top:50px;*/float:left; margin-left: 350px;}
-.part .rotate .php{width:500px;height:500px;animation:rotating1 30s;animation-iteration-count:infinite;animation-timing-function:linear;background:url(../imgs/rotate-bg.png) no-repeat center}
+.part .rotate .php{width:500px;height:500px;animation:rotating1 30s;animation-iteration-count:infinite;animation-timing-function:linear;background:url(../img/rotate-bg.png) no-repeat center}
 .part .rotate .php .box{top:170px;left:170px;width:120px;height:120px;position:absolute;background:#fcfeff;border:21px solid #dde9f3;border-radius:50%;animation:rotating-reverse1 30s;animation-iteration-count:infinite;animation-timing-function:linear}
 .part .rotate .php p{font-size:36px;line-height:58px;text-align:center;color:#474852;font-weight:600}
 .part .rotate .php p img{width:90px;margin-top: 35px;}

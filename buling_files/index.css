@@ -37,12 +37,7 @@ h1 {
     font-size: 16px;
     background: rgb(255,255,255);
     box-shadow: 0 1px 2px #ccc;
-    /*opacity: 0.3;*/
 
-    /*透明度*/
-    /*filter:alpha(opacity=50);*/ /*ie*/
-    　　/*-moz-opacity: 0.5;*/ /*火狐*/
-            　　/*-khtml-opacity: 0.5;*/ /*webkit核心的浏览器*/
 }
 .sl-logo>a {
     display: block;
@@ -142,24 +137,7 @@ h1 {
     overflow: hidden;
     display: inline-block;
 }
-/*.product .listUl li{
-    width: 130px;
-    height: 30px;
-    display: inline-block;
-    line-height: 30px!important;
-    cursor: pointer;
-}
-.product .listUl li a.item{
-    display: inline-block;
-    width: 130px;
-    text-align: left;
-    font-size: 14px;
-    color: #333;
-    overflow: hidden;
-}
-.product .listUl li a.item:hover{
-    color: #009ae1
-}*/
+
 /*返回顶部*/
 .to-top {
     position: fixed;
@@ -521,7 +499,7 @@ h1 {
 .product-introduction{width: 100%}
 .product-introduction-bg {
     height: 500px;
-    background: url(../imgs/product-bg1.jpg) no-repeat;
+    background: url(../img/bg_02.jpg) no-repeat;
     position: relative;
     z-index: 1;
     background-attachment: fixed;
@@ -570,7 +548,7 @@ h1 {
 .product-reason a {
     color: #fff;
     font-size: 24px;
-    background: url(../imgs/sprite.png)  no-repeat;
+    background: url(../img/sprite.png)  no-repeat;
     position: absolute;
     display: inline-block;
     width: 100%;
@@ -648,28 +626,7 @@ h1 {
     padding: 70px 0;
     background-color: #e5f6fd;
 }
-.strength-item {
-    width: 284px;
-    height: 384px;
-    padding: 42px 20px 0 20px;
-    background: #f1ece7;
-    border-radius: 10px;
-    border: 1px solid #e7e7e7;
-    box-shadow: 0 10px 10px rgb(175,175,175);
 
-    -webkit-backgroundorigin: padding;
-    -moz-background-origin: padding;
-    background-origin: padding;
-
-    background: url(../imgs/500081681.jpg) no-repeat;
-    position: relative;
-
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    -ms-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s;
-}
 .strength-item1 {
     background-position: 0 0;
 }
@@ -694,12 +651,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-/*流程图*/
-.flow-img {
-    height: 602px;
-    margin-top: 80px;
-    background: url(../imgs/flow.png) no-repeat top center;
-}
 
 .product-pc,.product-mobile {
     margin-top: 100px;

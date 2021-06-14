@@ -6,8 +6,8 @@
     <title>布灵网络科技-官网</title>
     <meta name="keywords" content="布灵、布灵网络、上海布灵、网页制作、网页设计、网站开发、网站设计、自动化、办公软件、小程序开发、公众号开发、">
     <meta name="description" content="官网-网页设计、网站开发、网站设计、自动化、办公软件、小程序开发、公众号开发等">
-    <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> -->
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="./buling_files/reset.css">
     <link rel="stylesheet" href="./buling_files/font-awesome.min.css">
@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="./buling_files/style.css">
     <link rel="stylesheet" href="./buling_files/footer.css">
     <script src="./buling_files/jquery.min.js"></script>
-    <script type="text/javascript" src="./buling_files/particles.min.js"></script>
     <script>
         $(function () {
             particlesJS.load('particles-js', 'js/particles.json', function () { });
@@ -186,7 +185,8 @@
             <!-- banner开始 -->
             <div class="banner-wrap">
                 <div id="particles-js" style="height:100%;width:100%;">
-                    <canvas class="particles-js-canvas-el" width="1898" height="911" style="width: 100%; height: 100%;"></canvas>
+                    <canvas class="canvas-js" width="1898" height="911" style="width: 100%; height: 100%;"></canvas>
+                    <script src="./js/bo.js"></script>
                 </div>
                 <div class="banner-text-wrap">
                     <div class="banner-text-top">布灵网络科技</div>
@@ -202,7 +202,7 @@
                     <div class="grad-line"></div>
                     <div class="company-introduction clear">
                         <div class='divleft' data-move-y="200px" data-move-x="-200px">
-                            <img src="imgs/500007055.jpg" style='width: 100%;'>
+                            <img src="img/500007055.jpg" style='width: 100%;'>
                         </div>
                         <div class='divright' data-move-y="200px" data-move-x="200px">
                             <div class='pdinner'>上海布灵网络是一家专注连接企业内外的客户关系管理（CRM）云服务解决方案的公司。 围绕企业自身领域和实际成长阶段需求，提供灵活的个性化配置和开发功能，帮助企业快速完成内外部的连接，通过数字化、智能化，帮助企业提升客户满意度，实现可持续的业绩增长。科技将不断深耕企业级服务，持续专注于CRM领域，在优化企业业务流程和用户体验的同时，帮助企业构建真正以客户为中心的核心竞争力，我们始终坚持做最适合、最具市场价值的定制化企业管理软件。目前公司业务领域涉及金融、电子、培训、餐饮、服装、零售、健康、咨询、猎聘等诸多行业，并在市场上取得了卓越的效果和客户赞誉。</div>
@@ -540,9 +540,9 @@
             });
             // 返回顶部按钮的替换
             $("#to-top").hover(function () {
-                $("#to-top a img").attr("src", "imgs/to-top-hover.png");
+                $("#to-top a img").attr("src", "img/to-top-hover.png");
             }, function () {
-                $("#to-top a img").attr("src", "imgs/to-top.png");
+                $("#to-top a img").attr("src", "img/to-top.png");
             }
             )
         })
