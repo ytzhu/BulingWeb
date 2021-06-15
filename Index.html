@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="./buling_files/style.css">
     <link rel="stylesheet" href="./buling_files/footer.css">
     <script src="./buling_files/jquery.min.js"></script>
+    <script src="./js/bo.js"></script>
     <script>
         $(function () {
-            particlesJS.load('particles-js', 'js/particles.json', function () { });
+            // particlesJS.load('particles-js', 'js/particles.json', function () { });
         })
     </script>
     <script src="./buling_files/three.min.js" type="text/javascript" charset="utf-8"></script>
@@ -185,10 +186,10 @@
             <!-- banner开始 -->
             <div class="banner-wrap">
                 <div id="particles-js" style="height:100%;width:100%;">
-                    <canvas class="canvas-js" width="1898" height="911" style="width: 100%; height: 100%;"></canvas>
-                    <script src="./js/bo.js"></script>
+                    <!-- <canvas class="canvas-js" width="1898" height="510" style="width: 100%; height: 100%;"></canvas> -->
+                    <!-- <script src="./js/bo.js"></script> -->
                 </div>
-                <div class="banner-text-wrap">
+                <div id="CenterContent" class="banner-text-wrap">
                     <div class="banner-text-top">布灵网络科技</div>
                     <div class="banner-text-mid"><span>网页设计、软件开发、小程序开发等</span><span>全程服务 </span></div>
                     <!--<a class="banner-text-bot" href="" target="">立即体验</a>-->
@@ -246,7 +247,7 @@
                                             <li class="slide-item" data-code="ecommerce">
                                                 <a href="http://www.bulingkeji.com/" target="_blank"
                                                    style="display:block;">
-                                                    <img class="item-bg" src="./img/g1.jpg" alt="">
+                                                    <img class="item-bg" src="./img/g3.jpg" alt="">
                                                     <div class="mask">
                                                         <div class="bg "></div>
                                                         <div class="content">
@@ -270,7 +271,7 @@
                                             <li class="slide-item" data-code="app">
                                                 <a href="http://www.bulingkeji.com/" target="_blank"
                                                    style="display:block;">
-                                                    <img class="item-bg" src="./img/g3.jpg" alt="">
+                                                    <img class="item-bg" src="./img/g1.jpg" alt="">
                                                     <div class="mask">
                                                         <div class="bg other-bg"></div>
                                                         <div class="content">
@@ -465,48 +466,48 @@
     <script type="text/javascript" src="./buling_files/jquery.smoove.js"></script>
     <script type="text/javascript" src="./buling_files/scrollForever.js"></script>
     <script>
-        $(function () {
-            var speed = 30;
-            containerIn.innerHTML = containerIn.innerHTML + containerIn.innerHTML;
-            function Marquee() {
-                if (containerIn.offsetWidth / 2 - containerOut.scrollLeft <= 0) {
-                    containerOut.scrollLeft -= containerIn.offsetWidth / 2;
-                } else {
-                    containerOut.scrollLeft++;
-                }
-            }
-            var MyMar = setInterval(Marquee, speed);
-            containerOut.onmouseover = function () { clearInterval(MyMar) };
-            containerOut.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
-            $(".product").hover(function () {
-                $(this).find(".listUl").fadeIn(200)
-            }, function () {
-                $(this).find(".listUl").fadeOut(200)
-            })
-            $("#contentImg").scrollForever();
-            // var time1 = new Date;
-            var li = $("#marquee_1").find("li");
-            var w = li.size() * li.outerWidth();
-            console.log(w);
-            $(".ab").css("width", w * 2);
-            var _html = $("#marquee_1").html();
-            $("#marquee_2").html(_html);
-            function autoScroll() {
-                var s = $(".a").scrollLeft();
-                if (s >= w) {
-                    $(".a").scrollLeft(0);
-                } else {
-                    $(".a").scrollLeft(s + 1);
-                }
-            }
-            var _scrolling = setInterval(autoScroll, 20);
-            $(".a").hover(function () {
-                clearInterval(_scrolling);
-            }, function () {
-                _scrolling = setInterval(autoScroll, 20);
-            })
-            // console.log("耗时：" + (new Date - time1) + " 毫秒");
-        })
+        // $(function () {
+        //     var speed = 30;
+        //     containerIn.innerHTML = containerIn.innerHTML + containerIn.innerHTML;
+        //     function Marquee() {
+        //         if (containerIn.offsetWidth / 2 - containerOut.scrollLeft <= 0) {
+        //             containerOut.scrollLeft -= containerIn.offsetWidth / 2;
+        //         } else {
+        //             containerOut.scrollLeft++;
+        //         }
+        //     }
+        //     var MyMar = setInterval(Marquee, speed);
+        //     containerOut.onmouseover = function () { clearInterval(MyMar) };
+        //     containerOut.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+        //     $(".product").hover(function () {
+        //         $(this).find(".listUl").fadeIn(200)
+        //     }, function () {
+        //         $(this).find(".listUl").fadeOut(200)
+        //     })
+        //     $("#contentImg").scrollForever();
+        //     // var time1 = new Date;
+        //     var li = $("#marquee_1").find("li");
+        //     var w = li.size() * li.outerWidth();
+        //     console.log(w);
+        //     $(".ab").css("width", w * 2);
+        //     var _html = $("#marquee_1").html();
+        //     $("#marquee_2").html(_html);
+        //     function autoScroll() {
+        //         var s = $(".a").scrollLeft();
+        //         if (s >= w) {
+        //             $(".a").scrollLeft(0);
+        //         } else {
+        //             $(".a").scrollLeft(s + 1);
+        //         }
+        //     }
+        //     var _scrolling = setInterval(autoScroll, 20);
+        //     $(".a").hover(function () {
+        //         clearInterval(_scrolling);
+        //     }, function () {
+        //         _scrolling = setInterval(autoScroll, 20);
+        //     })
+        //     // console.log("耗时：" + (new Date - time1) + " 毫秒");
+        // })
     </script>
     <script>
         $('.mainbody .container').smoove({ offset: '15%' });
@@ -673,10 +674,10 @@
                 };
             }
         }
-        window.addEventListener("resize", function () {
-            resizeCanvas()
-            adjustText()
-        });
+        // window.addEventListener("resize", function () {
+        //     resizeCanvas()
+        //     adjustText()
+        // });
         if (FLEE) {
             window.addEventListener("mousemove", function (event) {
                 MOUSE.x = event.clientX;
@@ -770,6 +771,9 @@
             window.requestAnimationFrame(animate);
         }
         init();
+        
+    </script>
+    <script>
     </script>
 </body>
 </html>

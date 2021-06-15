@@ -6,16 +6,16 @@
 	var mouseX = 0, mouseY = 0;
 	var windowHalfX = window.innerWidth / 2;
 	var windowHalfY = window.innerHeight / 2;
-	$(function () {
-		init();		//初始化
-		animate();	//动画效果
-	});
+	 $(function () {
+	 	init2();		//初始化
+	 	animate2();	//动画效果
+	 });
 
 	//初始化
-	function init() {
-
+	function init2() {
 		container = document.createElement( 'div' );	//创建容器
-		document.body.appendChild( container );			//将容器添加到页面上
+		document.getElementById('particles-js').appendChild( container );			//将容器添加到页面上
+		// document.body.appendChild( container );			//将容器添加到页面上
 		camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 1500 );		//创建透视相机设置相机角度大小等
 		camera.position.set(0,450,2000);		//设置相机位置
 		scene = new THREE.Scene();			//创建场景
@@ -99,8 +99,8 @@
 		renderer.setSize( window.innerWidth, window.innerHeight );
 	}
 
-	function animate() {
-		requestAnimationFrame( animate );
+	function animate2() {
+		requestAnimationFrame( animate2 );
 		render();
 	}
 
