@@ -14,7 +14,7 @@
 	//初始化
 	function init2() {
 		container = document.createElement( 'div' );	//创建容器
-		document.getElementById('particles-js').appendChild( container );			//将容器添加到页面上
+		document.getElementById('particles-js').append( container );			//将容器添加到页面上
 		// document.body.appendChild( container );			//将容器添加到页面上
 		camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 1500 );		//创建透视相机设置相机角度大小等
 		camera.position.set(0,450,2000);		//设置相机位置
@@ -82,7 +82,7 @@
 		}
 
 		renderer = new THREE.CanvasRenderer();
-		renderer.setSize( window.innerWidth, window.innerHeight );
+		renderer.setSize( window.innerWidth-50, window.innerHeight -60);
 		container.appendChild( renderer.domElement );
 		//document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 		//document.addEventListener( 'touchstart', onDocumentTouchStart, false );
